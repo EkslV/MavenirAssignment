@@ -1,5 +1,10 @@
 package com.test.mavenirassignment;
 
+import com.test.mavenirassignment.models.BaseArt;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class ListPresenter implements IListContract.Presenter {
 
     private IListContract.View mView;
@@ -12,7 +17,13 @@ public class ListPresenter implements IListContract.Presenter {
 
     @Override
     public void onUiReady() {
-        mView.showData(mRepository.loadData(mView.getContext()));
+        List<BaseArt> list = new ArrayList<>();
+
+        for (int i = 0; i < 500; i++) {
+            list.add(new BaseArt("title" + i, "author" + i, "book" ));
+        }
+        list.addAll(mRepository.loadData(mView.getContext()));
+        mView.showData(list);
     }
 
     @Override

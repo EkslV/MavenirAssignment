@@ -13,6 +13,12 @@ public class BaseArt {
     public BaseArt() {
     }
 
+    public BaseArt(String title, String author, String type) {
+        this.title = title;
+        this.author = author;
+        this.type = type;
+    }
+
     public String getTitle() {
         return title;
     }

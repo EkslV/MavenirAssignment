@@ -1,18 +1,16 @@
 package com.test.mavenirassignment.models;
 
-import java.util.List;
-
 public class Movie extends BaseArt {
-    private List<String> actors;
+    private String actors;
 
     public Movie() {
     }
 
-    public List<String> getActors() {
+    public String getActors() {
         return actors;
     }
 
-    public void setActors(List<String> actors) {
+    public void setActors(String actors) {
         this.actors = actors;
     }
 }
