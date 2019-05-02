@@ -1,6 +1,6 @@
 package com.test.mavenirassignment.models;
 
-public class TheatreShow {
+public class TheatreShow extends BaseArt {
     private String theaterName;
 
     public TheatreShow() {

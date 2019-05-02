@@ -94,10 +94,18 @@ public class ArtAdapter extends RecyclerView.Adapter<ArtAdapter.ItemHolder> {
             super(itemView);
 
             switch (viewType) {
-                case NO_COLOR: itemView.setBackgroundColor(Color.WHITE);
-                case GREEN: itemView.setBackgroundColor(Color.GREEN);
-                case MAGENTA: itemView.setBackgroundColor(Color.MAGENTA);
-                case CYAN: itemView.setBackgroundColor(Color.CYAN);
+                case NO_COLOR:
+                    itemView.setBackgroundColor(Color.WHITE);
+                    break;
+                case GREEN:
+                    itemView.setBackgroundColor(Color.GREEN);
+                    break;
+                case MAGENTA:
+                    itemView.setBackgroundColor(Color.MAGENTA);
+                    break;
+                case CYAN:
+                    itemView.setBackgroundColor(Color.CYAN);
+                    break;
             }
 
             artIcon = itemView.findViewById(R.id.artIcon);
